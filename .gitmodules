@@ -1,0 +1,3 @@
+[submodule "bn_linux_syscall"]
+	path = bn_linux_syscall
+	url = git@github.com:SolarDebris/bn_linux_syscall.git
