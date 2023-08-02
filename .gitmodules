@@ -1,3 +1,6 @@
 [submodule "bn_linux_syscall"]
 	path = bn_linux_syscall
 	url = git@github.com:SolarDebris/bn_linux_syscall.git
+[submodule "bn_jumpkeys"]
+	path = bn_jumpkeys
+	url = git@github.com:SolarDebris/bn_jumpkeys.git
