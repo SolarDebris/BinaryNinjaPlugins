@@ -13,9 +13,6 @@ def get_string_args_from_xrefs(bv, func):
                 if value.type == bv.types.CharType:
                     print(get_string_at(value)) 
                 elif value.type.name == "CFString":
-                
-                    
-
     return None
 
 def get_number_of_callees(bv):
