@@ -17,6 +17,12 @@ def remove_ptrace():
     """
     return None
 
+def remove_sleep():
+    """
+    Patches out sleep function calls from the binary.
+    """
+    return None
+
 
 PluginCommand.register("Remove ptrace anti-debugging", remove_ptrace)
 PluginCommand.register("Remove fork syscalls", remove_fork)
