@@ -21,3 +21,8 @@ def import_symbols(bv):
             func = bv.get_function_at(addr)
             if func != None:
                 func.name = string
+
+
+
+def export_symbols(bv):
+    
