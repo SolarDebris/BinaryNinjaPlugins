@@ -25,4 +25,10 @@ def import_symbols(bv):
 
 
 def export_symbols(bv):
+    output = ""
+    for func in bv.functions:
+        if "sub" not in func.name:
+            output += hex(func.start) + " " + func.name + "\n"
+
+
     
