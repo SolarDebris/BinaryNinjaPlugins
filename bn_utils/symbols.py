@@ -8,7 +8,15 @@ def import_symbols(bv):
     address func_name
     address func_name_2
     
+
     """
+
+    import_prompt = interaction.OpenFileNameField("Select file to restore symbols from:") 
+
+    symbols = open(import_prompt).read()
+
+
+
     for line in symbols.split("\n"):
         if len(line) == 2:
             addr, string = line
@@ -26,6 +34,10 @@ def import_symbols(bv):
 
 def export_symbols(bv):
     output = ""
+    
+    save_prompt = interaction.SaveFileNameField("Save to file").result
+ 
+
     for func in bv.functions:
         if "sub" not in func.name:
             output += hex(func.start) + " " + func.name + "\n"
