@@ -3,11 +3,11 @@ from binaryninjaui import *
 
 
 def import_symbols(bv):
-    """Imports function symbols from a file in the format 
+    """
+    Imports function symbols and data variables from a file in the format 
 
     address func_name
     address func_name_2
-    
 
     """
 
@@ -33,6 +33,11 @@ def import_symbols(bv):
 
 
 def export_symbols(bv):
+    """
+    Export function and data variables into a file
+
+    """
+    
     output = ""
     
     save_prompt = interaction.SaveFileNameField("Save to file").result
